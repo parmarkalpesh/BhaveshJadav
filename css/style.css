@@ -1168,3 +1168,6 @@ body:after {
 .footer a:hover {
   color: #000;
 }
+.img-face {
+  height: 700px;
+}
