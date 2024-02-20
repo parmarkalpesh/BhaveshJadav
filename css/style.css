@@ -8,6 +8,7 @@ body {
   color: #454545;
   font-weight: 400;
   font-size: 1rem;
+  cursor: none;
 }
 
 ::-moz-selection {
@@ -535,9 +536,10 @@ body:after {
 }
 .site-navbar .site-navigation .site-menu .has-children:hover,
 .site-navbar .site-navigation .site-menu .has-children:focus,
-.site-navbar .site-navigation .site-menu .has-children:active {
-  cursor: pointer;
-}
+.site-navbar .site-navigation .site-menu .has-children:active
+ /* {
+  cursor: none;
+} */
 .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown,
 .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown,
 .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
@@ -587,7 +589,7 @@ body:after {
   padding-left: 10px;
   padding-right: 0px;
   line-height: 1;
-  cursor: pointer;
+  /* cursor: none; */
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -645,7 +647,7 @@ body:after {
   width: 36px;
   height: 36px;
   text-align: center;
-  cursor: pointer;
+  /* cursor: none; */
   border-radius: 50%;
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
@@ -1171,3 +1173,47 @@ body:after {
 .img-face {
   height: 700px;
 }
+
+.myclass:hover ~ #custom{
+  background-color: var(black);
+  transform: scale(0.5);
+}
+
+
+
+.custom {
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  /* top: 25rem; */
+}
+
+/* .big {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes stretch {
+  0% {
+    opacity: 0.2;
+    background-color: green;
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: red;
+  }
+} */
